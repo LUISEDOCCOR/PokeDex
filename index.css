@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 20px;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+}
+.root_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.img_pokemon{
+    width: 10vw;
+    transition-duration: 0.5s;
+}
+.img_pokemon:hover{
+    transform: scale(1.5);
+}
+.card{
+    width: 18rem;
+}
+@media screen and (max-width: 1000px) {
+    .img_pokemon{
+        width: 150px;
+    }   
+    .img_pokemon:hover{
+        transform: scale(1);
+    }
+    #root{
+        gap: 20px;
+    }
+}
